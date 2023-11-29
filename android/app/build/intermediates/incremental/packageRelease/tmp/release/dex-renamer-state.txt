@@ -1,0 +1,7 @@
+#Mon Nov 20 10:39:12 PKT 2023
+base.1=C\:\\Users\\mynam\\OneDrive\\Desktop\\code play\\PlanIt\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes2.dex
+path.1=classes2.dex
+base.0=C\:\\Users\\mynam\\OneDrive\\Desktop\\code play\\PlanIt\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex

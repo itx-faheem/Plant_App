@@ -13,23 +13,20 @@ import RadioButton from '../../component/RadoiButton';
 import AppButton from '../../component/AppButton';
 import CreateBottomSheet from '../../component/CreateBottomSheet';
 
-const CreateEvent = ({ navigation }) => {
-//     const [bottomSheetVisible, setBottomSheetVisible] = useState(false);
+const CreateEvent = ({ navigation , showBottomSheetFunction}) => {
+    const [showBottom, setshowBottom] = useState(false)
+    const handleOpenspress = () =>{
+        setshowBottom(true)
+    }
 
-//   const showBottomSheet = () => {
-//     setBottomSheetVisible(true);
-//   };
 
-//   const handalbottomsheet = () => {
-//     setBottomSheetVisible(false);
-//   };
     return (
         <View  >
             <ScrollView>
                 <KeyboardAvoidingView>
                     <Header onPress={() => navigation.goBack()} title="Create an Event" color="#000" style={{ color: "#000" }} />
                     <View>
-                        <StepScreensInfo />
+                    <StepScreensInfo  />
                         <View style={styles.innerContainer}>
                             <View style={{ flex: 1, justifyContent: "flex-end" }} >
                                 <TouchableOpacity
@@ -65,7 +62,7 @@ const CreateEvent = ({ navigation }) => {
                                             <Image style={styles.imgdateAndtime}   source={require('../../img/date.png')} />
                                             <TextInput   style={styles.inputTextdateAndTieme}   multiline={true}   placeholder="Event Date" placeholderTextColor="#7A828A" />
                                             <TouchableOpacity 
-                                            //  onPress={showBottomSheet}
+                                             onPress={handleOpenspress}
                                              activeOpacity={0.5} >
                                             <Icon  name="down" color="#425466" size={15} /> 
                                             </TouchableOpacity>
@@ -77,11 +74,10 @@ const CreateEvent = ({ navigation }) => {
                                             <Image   style={styles.imgdateAndtime} source={require('../../img/time.png')}   />
                                             <TextInput  style={styles.inputTextdateAndTieme}  multiline={true}  placeholder="Event Date" placeholderTextColor="#7A828A" />
                                             <TouchableOpacity 
-                                            // onPress={showBottomSheet} 
+                                            onPress={handleOpenspress} 
                                             activeOpacity={0.5}>
                                                     <Icon name="down" color="#425466" size={15} />
                                                   </TouchableOpacity>
-                                             {/* <CreateBottomSheet isVisible={bottomSheetVisible} onClose={handalbottomsheet} /> */}
                                         </View>
                                     </View>
                                 </View>
@@ -100,9 +96,9 @@ const CreateEvent = ({ navigation }) => {
                                     <TextInput placeholder='#00.00' placeholderTextColor="#7A828A"  />
                                     </View>
                                 </View>
-                                <AppButton  title="Continue" />
-                                
+                                <AppButton   onPress={()=>navigation.push("AddDelegates")}  title="Continue" />
                         </View>
+                        <CreateBottomSheet  handleOpenspress={handleOpenspress}  />
                     </View>
                 </KeyboardAvoidingView>
             </ScrollView>
@@ -164,54 +160,3 @@ const styles = StyleSheet.create({
         gap:4
     }
 })
-
-
-
-
-
-
-
-
-// import { Image, 
-//     Text, 
-//     TouchableOpacity, 
-//     View
-//  } from 'react-native'
-// import React, {useState} from 'react'
-// import Icon from 'react-native-vector-icons/dist/AntDesign';
-// import CreateBottomSheet from '../../component/CreateBottomSheet';
-
-// const CreateEvent = ({ navigation }) => {
-//     const [bottomSheetVisible, setBottomSheetVisible] = useState(false);
-
-//     const showBottomSheet = () => {
-//         setBottomSheetVisible(true);
-//     };
-
-//     const handalbottomsheet = () => {
-//         setBottomSheetVisible(false);
-//     };
-
-//     return (
-//         <View  >
-//         <TouchableOpacity
-//         onPress={showBottomSheet}
-//        activeOpacity={0.5} >
-//       <Icon  name="down" color="#425466" size={15} /> 
-//       </TouchableOpacity>
-//       <CreateBottomSheet isVisible={bottomSheetVisible} onClose={handalbottomsheet} />
-//         </View>
-//         )
-//     }
-
-
-
-
-
-
-
-
-
-
-
-

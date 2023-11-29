@@ -13,6 +13,7 @@ import Splash from '../Splash';
 import BottomTabNavigation from '../BottomNavigation';
 import CreateEvent from '../AddEvent/CreateEvent';
 import CreateBottomSheet from '../../component/CreateBottomSheet';
+import AddDelegates from './AddDelegates';
 const NavigationScreens = () => {
     const [isSplashScreen, setisSplashScreen] = useState(false);
     const Stack = createNativeStackNavigator();
@@ -25,9 +26,9 @@ const NavigationScreens = () => {
 
     return (
         <Stack.Navigator
-            initialRouteName='CreateBottomSheet'
+            // initialRouteName='CreateBottomSheet'
             screenOptions={{ headerShown: false }}>
-            <Stack.Screen name="CreateBottomSheet" component={CreateBottomSheet} />
+            {/* <Stack.Screen name="CreateBottomSheet" component={CreateBottomSheet} /> */}
             {isSplashScreen ? (
                 <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
             ) : (
@@ -42,6 +43,7 @@ const NavigationScreens = () => {
             <Stack.Screen name="LastLoginscreen" component={LastLoginscreen} />
             <Stack.Screen name="HomePage" component={BottomTabNavigation} />
             <Stack.Screen name="CreateEvent" component={CreateEvent} />
+            <Stack.Screen name="AddDelegates" component={AddDelegates} />
         </Stack.Navigator>
     );
 };

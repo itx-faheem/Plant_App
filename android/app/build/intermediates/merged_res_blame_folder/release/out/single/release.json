@@ -1,0 +1,170 @@
+[
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_emaiicon.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_emaiicon.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_artwork.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_artwork.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_budgeting.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_budgeting.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.planit.app-main-36:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.planit.app-main-36:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.planit.app-main-36:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_budgetingcolor.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_budgetingcolor.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_stepthree.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_stepthree.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backiconmask.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backiconmask.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.planit.app-main-36:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_profilecolor.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_profilecolor.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_tasks.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_tasks.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.planit.app-main-36:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_messages.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_messages.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-hdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.planit.app-res-29:/drawable-hdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.planit.app-main-36:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_compass.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_compass.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_emailvector.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_emailvector.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_event.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_event.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_stepone.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_stepone.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.planit.app-main-36:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_profile.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_profile.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_filter.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_filter.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_photo.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_photo.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable_rn_edit_text_material.xml.flat",
+        "source": "com.planit.app-main-36:/drawable/rn_edit_text_material.xml"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.planit.app-main-36:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_logo.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_logo.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_profileicon.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_profileicon.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_messagecolor.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_messagecolor.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-xxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.planit.app-res-29:/drawable-xxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_background.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_background.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_logowhitecolor.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_logowhitecolor.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_taskcolor.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_taskcolor.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_lock.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_lock.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.planit.app-main-36:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_steptwo.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_steptwo.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_cloudbgc.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_cloudbgc.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-mdpi_src_img_stepfour.png.flat",
+        "source": "com.planit.app-res-29:/drawable-mdpi/src_img_stepfour.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-xxxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.planit.app-res-29:/drawable-xxxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/drawable-xhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.planit.app-res-29:/drawable-xhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.planit.app-merged_res-35:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.planit.app-main-36:/mipmap-mdpi/ic_launcher_round.png"
+    }
+]

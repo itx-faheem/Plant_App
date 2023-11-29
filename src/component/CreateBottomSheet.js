@@ -1,70 +1,34 @@
 import React, { useCallback, useMemo, useRef, useState } from 'react';
-import { View, Text, StyleSheet, Button, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, Button, TouchableOpacity, Image } from 'react-native';
 import BottomSheet from '@gorhom/bottom-sheet';
 import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import {Calendar, LocaleConfig} from 'react-native-calendars';
 import Icon from 'react-native-vector-icons/dist/AntDesign';
-
-
-const CreateBottomSheet = () => {
-    LocaleConfig.locales['fr'] = {
-        monthNames: [
-          'Janvier',
-          'Février',
-          'Mars',
-          'Avril',
-          'Mai',
-          'Juin',
-          'Juillet',
-          'Août',
-          'Septembre',
-          'Octobre',
-          'Novembre',
-          'Décembre'
-        ],
-        monthNames: [
-          'Janvier',
-          'Février',
-          'Mars',
-          'Avril',
-          'Mai',
-          'Juin',
-          'Juillet',
-          'Août',
-          'Septembre',
-          'Octobre',
-          'Novembre',
-          'Décembre'
-        ],
-        monthNamesShort: ['Janv.', 'Févr.', 'Mars', 'Avril', 'Mai', 'Juin', 'Juil.', 'Août', 'Sept.', 'Oct.', 'Nov.', 'Déc.'],
-        dayNames: ['Sunday','Monday', 'Tuesday,', 'Wednesday', 'Thursday', 'Friday ','Saturday',],
-        dayNamesShort: ['S', 'M', 'T', 'W', 'T', 'F', 'S']
-      };
+import BottomSheetHeader from './BottomSheetHeader';
+const CreateBottomSheet = ({ onPress, } ) => {
       
-      LocaleConfig.defaultLocale = 'fr';
-      
-    const [selected, setselected] = useState('')
-  const snapPoints = useMemo(() => ["30%" ,"50%", "75%"], []);
+  const snapPoints = useMemo(() => ["40%", "66%"], []);
   const bottomSheetRef = useRef(null);
 
   const handleClosspress = () => {bottomSheetRef.current?.close()};
   const handleOpenspress = () => {bottomSheetRef.current?.expand()};
-
+  
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <BottomSheetModalProvider>
         <View style={styles.container}>
-          <Button title="close" onPress={handleClosspress} />
-          <Button title="Open" onPress={handleOpenspress} />
           <BottomSheet
-            index={1}
+            index={0}
             ref={bottomSheetRef}
             snapPoints={snapPoints}
+            enablePanDownToClose={true}
+            animateOnMount={true}
+            topInset={12}
           >
             <View style={styles.contentContainer}>
                 <View style={styles.headerBottomSheet} >
-                    <TouchableOpacity activeOpacity={0.5} >
+                    <TouchableOpacity activeOpacity={0.5}   onPress={handleClosspress}  >
                     <Text style={{color:"#000", fontSize:16, lineHeight:24, fontWeight:"300", width:80,textAlign:"left" }} >Cancel</Text>
                     </TouchableOpacity>
                     <Text  style={{color:"#000", fontSize:16, lineHeight:24, fontWeight:"600", width:150,textAlign:"center"}}  >Event Date</Text>
@@ -72,78 +36,70 @@ const CreateBottomSheet = () => {
                     <Text style={{color:"#6941C6", fontSize:16, lineHeight:24, fontWeight:"600", width:80,textAlign:"right"}} >Save</Text>
                     </TouchableOpacity>
                 </View>
-                <View style={{flexDirection:"row", gap:10}} >
-                    <TouchableOpacity>
-                    <Icon size={12} name="left"/>
-                    </TouchableOpacity>
-                    <TouchableOpacity>
-                    <Icon size={12} name="right"/>
-                    </TouchableOpacity>
-                </View>
                 <Calendar
-  style={{ width: 375 }}
-  onDayPress={(date) => {
-    console.log(date);
-    handleClosspress();
-  }}
-  hideExtraDays={true}
-  showHeaderBar={false}
-  hideArrows={true}
-  hideDayNames={false}
-  showWeekNumbers={false}
-  theme={{
-    
-  }}
-/>
-
-            </View>
-          </BottomSheet>
-        </View>
-      </BottomSheetModalProvider>
-    </GestureHandlerRootView>
+                onPress={`onPress`}
+                  style={{ width:"107%",}}
+                  onDayPress={(date) => {
+                    console.log(date);
+                  }}
+                  hideExtraDays={true}
+                  showHeaderBar={false}
+                  hideArrows={true}
+                  hideDayNames={false}
+                  showWeekNumbers={false}
+                  customHeader={() => <BottomSheetHeader />}
+                  />
+                    <View style={{flexDirection:"row", width:"100%", alignItems:"center", 
+                    borderWidth:1, borderColor:"#E6E6E6",
+                    justifyContent:"space-between", paddingHorizontal:16, paddingVertical:12}} >
+                        <Text style={styles.textTime} >Time</Text>
+                        <View style={{flexDirection:"row", borderWidth:1, borderColor:"#E6E6E6", 
+                        paddingVertical:8,paddingHorizontal:16, borderRadius:25, gap:5}} >
+                          <Text style={styles.timestyle} >8:30</Text>
+                          <Text style={styles.timestyle} >AM</Text>
+                        </View>
+                      </View>
+                    </View>
+                  </BottomSheet>
+                </View>
+            </BottomSheetModalProvider>
+         </GestureHandlerRootView>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 24,
-    backgroundColor: 'grey',
-  },
-  contentContainer: {
-    flex: 1,
-    alignItems: 'center',
-  },
-  headerBottomSheet:{
-    flexDirection:"row",
-    justifyContent:"space-between",
-    alignItems:"center",
-    paddingHorizontal:16,
-    paddingVertical:12,
-    gap:16
-  }
-});
+     
 
 export default CreateBottomSheet;
 
 
 
-
-
-{/* 
-//  <GestureHandlerRootView style={{ flex: 1 }}>
-//       <BottomSheetModalProvider>
-//     <View style={styles.container}>
-//       <BottomSheet
-//         ref={bottomSheetRef}
-//         index={1}
-//         snapPoints={snapPoints}
-       
-//       >
-//         <View style={styles.contentContainer}>
-//           <Text>Awesome 🎉</Text>
-//         </View>
-//       </BottomSheet>
-//     </View> */}
-{/* //     </BottomSheetModalProvider> */}
-{/* //     </GestureHandlerRootView>  */}
+const styles = StyleSheet.create({
+        container: {
+          flex: 1,
+          padding: 24,
+          backgroundColor: 'grey',
+        },
+        contentContainer: {
+          flex: 1,
+          alignItems: 'center',
+          width:"100%", 
+        },
+        headerBottomSheet:{
+          flexDirection:"row",
+          justifyContent:"space-between",
+          alignItems:"center",
+          paddingHorizontal:16,paddingVertical:12,
+          gap:16
+        },
+        textTime:{
+          fontSize:16, color:"#000"
+        },
+        weekNamesStyle:{
+          width:"5%",
+          alignItems:"center",
+          color:"#000"
+        },
+        timestyle:{
+          color:"#000",
+          fontWeight:"600"
+        }
+      })

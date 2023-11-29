@@ -4,9 +4,6 @@ import Icon from 'react-native-vector-icons/AntDesign';
 
 const Header = ({ navigation, onPress, title, style, signInView, color }) => {
     return (
-        // <SafeAreaView>
-        //     <KeyboardAvoidingView>
-        //         <ScrollView>
         <View style={[styles.headerContainer, signInView]}>
             <TouchableOpacity onPress={onPress}>
                 <Icon name='arrowleft' size={24} color={color} />
@@ -20,9 +17,6 @@ const Header = ({ navigation, onPress, title, style, signInView, color }) => {
             <View style={{ height: 24, width: 24 }} >
             </View>
         </View>
-        //         </ScrollView>
-        //     </KeyboardAvoidingView>
-        // </SafeAreaView>
     );
 };
 
