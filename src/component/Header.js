@@ -2,13 +2,13 @@ import React from 'react';
 import { StyleSheet, View, TouchableOpacity, Text, SafeAreaView, ScrollView, KeyboardAvoidingView } from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
 
-const Header = ({ navigation, onPress, title, style, signInView, color }) => {
+const Header = ({ navigation, onPress, title, style, signInView, color,addStyle }) => {
     return (
         <View style={[styles.headerContainer, signInView]}>
             <TouchableOpacity onPress={onPress}>
                 <Icon name='arrowleft' size={24} color={color} />
             </TouchableOpacity>
-            <View style={{ flex: 1, height: 20, justifyContent: "center", alignItems: "center" }}>
+            <View style={[{ flex: 1, height: 20, justifyContent: "center", alignItems: "center"}, addStyle ]}>
                 {
                     title ? (<Text style={[{ textAlign: "center", fontSize: 14, fontWeight: 600, lineHeight: 20, }, style]}>{title}</Text>) : null
                 }
